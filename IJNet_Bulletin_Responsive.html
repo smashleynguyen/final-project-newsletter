@@ -234,6 +234,12 @@
 				border-bottom:1px solid #CCCCCC;
 			}
 
+			#templateOpportunities {
+				background-color: #F4F4F4;
+				border-top:1px solid #CCCCCC;
+				border-bottom:1px solid #CCCCCC;
+			}
+
 
 			/**
 			* @tab Body
@@ -251,6 +257,18 @@
 				padding-bottom:20px;
 				padding-left:20px;
 				/*@editable*/ text-align:left;
+			}
+
+			.bodyAds {
+				color:#505050;
+				font-family:Helvetica;
+				font-size: 14px;
+				line-height: 150%;
+				padding-top: 10px;
+				padding-right: 10px;
+				padding-bottom: 10px;
+				padding-left: 20px;
+				text-align: left;
 			}
 
 			.bodyRegion{
@@ -293,6 +311,15 @@
 			}
 
 			#templateColumnsStories {
+				background-color:#F4F4F4;
+			}
+
+			#templateColumnsAds {
+				background-color:#F4F4F4;
+			}
+
+			#templateColumnButton {
+				text-align: right;
 				background-color:#F4F4F4;
 			}
 			/**
@@ -352,6 +379,13 @@
 				display:inline;
 				height:auto;
 				max-width:260px;
+			}
+
+			.buttonContent {
+				display:inline;
+				align:right;
+				padding-right: 20px;
+				padding-bottom: 20px;
 			}
 			/* ========== Footer Styles ========== */
 			/**
@@ -676,18 +710,27 @@
 																								</td>
 					                                    </table>
 					                                    <!-- // END BODY -->
+																							<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumnButton">
+																								<td align="right" valign="top" class="buttonContent" style="padding-top:20px;">
+																										<table border="0" cellpadding="20" cellspacing="0" width="100%">
+																													<tr>
+																																	<a href="http://ijnet.org/en/news" style="color: #ffffff;text-align:right;background:#405a69;padding:10px 20px 10px 20px;border-radius:10px; font-family: Helvetica; font-weight: bold; text-decoration: none;">Browse Topics<img src="http://ijnet.org/sites/all/modules/custom/fe_newsletter/theme/images/arrow.png" alt="arrow" style="padding:9px 10px 10px 10px;margin:-2px;"/></a></p>
+																													</tr>
+																											</table>
+																									</td>
+																								</table>
 																							<!-- BEGIN BODY // -->
 																								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateAds">
 																										<tr>
-																												<td valign="top" class="bodyContent" mc:edit="body_content">
-																														<h2>Advertisements</h2>
+																												<td valign="top" class="bodyAds" mc:edit="body_content">
+																														<h5>Advertisements</h5>
 																												</td>
 																										</tr>
 																								</table>
 																									<!-- // END BODY -->
 																									<!--// BEGIN BODY -->
 																									<!-- BEGIN COLUMNS // -->
-								                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumnsStories">
+								                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumnsAds">
 																											<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
 																													<table border="0" cellpadding="20" cellspacing="0" width="100%">
 																															<tr>
@@ -723,7 +766,7 @@
 																									<!--// END BODY -->
 
 																								<!-- // BEGIN BODY // -->
-																									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+																									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateOpportunities">
 																											<tr>
 																													<td valign="top" class="bodyContent" mc:edit="body_content">
 																															<h2>Opportunities</h2>
@@ -785,6 +828,41 @@
 																					</tr>
 																			</table>
 																			<!-- // END BODY -->
+																			<!-- BEGIN COLUMNS // -->
+																				<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+																					<tr mc:repeatable>
+																							<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+																									<table border="0" cellpadding="20" cellspacing="0" width="100%">
+																											<tr>
+																													<td class="leftColumnContent">
+																														</td>
+																												</tr>
+																												<tr>
+																													<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+																																<h3><a href="http://ijnet.org/en/opportunities/silk-offers-webinars-data-journalism-worldwide">Silk offers webinars on data journalism [Worldwide]</a></h3>
+																																<p>Participants will learn how to find and extract data, clean the dataset and analyze and visualize the data in a three-part series beginning July 22 at 12 p.m. EDT.</p>
+																														</td>
+																												</tr>
+																										</table>
+																								</td>
+																							<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+																									<table border="0" cellpadding="20" cellspacing="0" width="100%">
+																											<tr>
+																													<td class="rightColumnContent">
+																														</td>
+																												</tr>
+																												<tr>
+																													<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+																														<h3><a href="http://ijnet.org/en/opportunities/webinar-focuses-investigating-charities-worldwide">Webinar focuses on investigating charities [Worldwide]</a></h3>
+																														<p>Amy Costello, founder and managing editor of the podcast Tiny Spark, will talk about reporting constructively on philanthropy, nonprofits, international aid and for-profit social good initiatives.</p>
+																														<p style="color:#ddb426">Deadline: 07/27/2015</p>
+																														</td>
+																												</tr>
+																										</table>
+																								</td>
+																						</tr>
+																				</table>
+																		<!--END COLUMNS // -->
 																		<!-- BEGIN BODY // -->
 																			<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateSocial">
 																					<tr>
